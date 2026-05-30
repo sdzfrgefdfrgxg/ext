@@ -1,415 +1,369 @@
-/*
- * Dumped With: roblox-dumper 2.7
- * Created by: Jonah (jonahw on Discord)
- * Github: https://github.com/nopjo/roblox-dumper
- * Roblox Version: version-460909c4fe904aae
- * Time Taken: 3406 ms (3.406000 seconds)
- * Total Offsets: 278
- */
-
-#pragma once
-#include <cstdint>
-
-// clang-format off
-namespace offsets {
-    inline constexpr const char* roblox_version = "version-460909c4fe904aae";
-
-    namespace Atmosphere {
-        inline constexpr uintptr_t Color = 0xD0;
-        inline constexpr uintptr_t Decay = 0xDC;
-        inline constexpr uintptr_t Density = 0xE8;
-        inline constexpr uintptr_t Glare = 0xEC;
-        inline constexpr uintptr_t Haze = 0xF0;
-        inline constexpr uintptr_t Offset = 0xF4;
+{
+  "metadata": {
+    "dumper": "roblox-dumper 2.7",
+    "author": "Jonah (jonahw on Discord)",
+    "github": "https://github.com/nopjo/roblox-dumper",
+    "roblox_version": "version-460909c4fe904aae",
+    "total_offsets": 278
+  },
+  "offsets": {
+    "Atmosphere": {
+      "Color": 208,
+      "Decay": 220,
+      "Density": 232,
+      "Glare": 236,
+      "Haze": 240,
+      "Offset": 244
+    },
+    "BasePart": {
+      "CastShadow": 245,
+      "Color3": 404,
+      "Locked": 246,
+      "Massless": 247,
+      "Primitive": 328,
+      "Reflectance": 236,
+      "Shape": 433,
+      "Transparency": 240
+    },
+    "BloomEffect": {
+      "Intensity": 208,
+      "Size": 212,
+      "Threshold": 216
+    },
+    "ByteCode": {
+      "Pointer": 16,
+      "Size": 32
+    },
+    "Camera": {
+      "CFrame": 248,
+      "FieldOfView": 352,
+      "Position": 284,
+      "Rotation": 248,
+      "ViewportInt16": 684,
+      "ViewportSize": 744
+    },
+    "CharacterMesh": {
+      "BaseTextureId": 224,
+      "BodyPart": 352,
+      "MeshId": 272,
+      "OverlayTextureId": 320
+    },
+    "DataModel": {
+      "CreatorId": 400,
+      "GameId": 408,
+      "GameLoaded": 1592,
+      "JobId": 312,
+      "PlaceId": 416,
+      "ServerIP": 1568,
+      "Workspace": 376
+    },
+    "FakeDataModel": {
+      "Pointer": 126677464,
+      "RealDataModel": 464
+    },
+    "GuiBase2D": {
+      "AbsolutePosition": 268,
+      "AbsoluteRotation": 392,
+      "AbsoluteSize": 280
+    },
+    "GuiObject": {
+      "Active": 1464,
+      "AnchorPoint": 1384,
+      "AutomaticSize": 1392,
+      "BackgroundColor3": 1360,
+      "BackgroundTransparency": 1396,
+      "BorderColor3": 1372,
+      "BorderMode": 1400,
+      "BorderSizePixel": 1404,
+      "ClipsDescendants": 1465,
+      "GuiState": 1416,
+      "Interactable": 1467,
+      "LayoutOrder": 1424,
+      "Position": 1312,
+      "Rotation": 392,
+      "Selectable": 1468,
+      "SelectionOrder": 1452,
+      "Size": 1344,
+      "SizeConstraint": 1456,
+      "Visible": 1469,
+      "ZIndex": 1460
+    },
+    "Humanoid": {
+      "AutoJumpEnabled": 480,
+      "AutoRotate": 481,
+      "AutomaticScalingEnabled": 482,
+      "BreakJointsOnDeath": 483,
+      "CameraOffset": 320,
+      "DisplayDistanceType": 396,
+      "EvaluateStateMachine": 484,
+      "Health": 404,
+      "HealthDisplayDistance": 408,
+      "HealthDisplayType": 412,
+      "HipHeight": 416,
+      "JumpHeight": 428,
+      "JumpPower": 432,
+      "MaxHealth": 436,
+      "MaxSlopeAngle": 440,
+      "NameDisplayDistance": 444,
+      "NameOcclusion": 448,
+      "RequiresNeck": 489,
+      "RigType": 460,
+      "SeatPart": 288,
+      "Sit": 490,
+      "TargetPoint": 356,
+      "UseJumpPower": 492,
+      "WalkSpeed": 476,
+      "WalkSpeedCheck": 964,
+      "WalkToPoint": 380
+    },
+    "InputObject": {
+      "MousePosition": 236
+    },
+    "Instance": {
+      "AttributeContainer": 72,
+      "AttributeList": 24,
+      "AttributeToNext": 88,
+      "AttributeToValue": 24,
+      "ChildrenEnd": 8,
+      "ChildrenStart": 120,
+      "ClassDescriptor": 24,
+      "ClassName": 8,
+      "Name": 176,
+      "Parent": 112
+    },
+    "Lighting": {
+      "Ambient": 224,
+      "Atmosphere": 496,
+      "Brightness": 296,
+      "ClockTime": 448,
+      "ColorShift_Bottom": 236,
+      "ColorShift_Top": 248,
+      "EnvironmentDiffuseScale": 300,
+      "EnvironmentSpecularScale": 304,
+      "ExposureCompensation": 308,
+      "FogColor": 260,
+      "FogEnd": 316,
+      "FogStart": 320,
+      "OutdoorAmbient": 272,
+      "ShadowSoftness": 328,
+      "Sky": 480
+    },
+    "LightingParameters": {
+      "GeographicLatitude": 408,
+      "LightColor": 356,
+      "LightDirection": 368,
+      "SkyAmbient": 344,
+      "SkyAmbient2": 412,
+      "Source": 380,
+      "TrueMoonPosition": 396,
+      "TrueSunPosition": 384
+    },
+    "LocalScript": {
+      "Bytecode": 424,
+      "Hash": 232
+    },
+    "MaterialColors": {
+      "Asphalt": 48,
+      "Basalt": 39,
+      "Brick": 15,
+      "Cobblestone": 51,
+      "Concrete": 12,
+      "CrackedLava": 45,
+      "Glacier": 27,
+      "Grass": 6,
+      "Ground": 42,
+      "Ice": 54,
+      "LeafyGrass": 57,
+      "Limestone": 63,
+      "Mud": 36,
+      "Pavement": 66,
+      "Rock": 24,
+      "Salt": 60,
+      "Sand": 18,
+      "Sandstone": 33,
+      "Slate": 9,
+      "Snow": 30,
+      "WoodPlanks": 21
+    },
+    "MeshPart": {
+      "MeshId": 768,
+      "TextureId": 816
+    },
+    "ModuleScript": {
+      "Bytecode": 336,
+      "Hash": 232
+    },
+    "MouseService": {
+      "InputObject": 280
+    },
+    "Player": {
+      "AccountAge": 812,
+      "Character": 936,
+      "DisplayName": 304,
+      "HealthDisplayDistance": 856,
+      "LocaleId": 1792,
+      "NameDisplayDistance": 872,
+      "Team": 688,
+      "TeamColor": 884,
+      "UserId": 728
+    },
+    "Players": {
+      "LocalPlayer": 312
+    },
+    "Primitive": {
+      "AssemblyAngularVelocity": 260,
+      "AssemblyLinearVelocity": 248,
+      "CFrame": 200,
+      "Material": 566,
+      "Orientation": 200,
+      "Position": 236,
+      "PrimitiveFlags": 438,
+      "Rotation": 200,
+      "Size": 440
+    },
+    "PrimitiveFlags": {
+      "Anchored": 2,
+      "CanCollide": 8,
+      "CanQuery": 32,
+      "CanTouch": 16
+    },
+    "ProximityPrompt": {
+      "ActionText": 200,
+      "Enabled": 334,
+      "HoldDuration": 312,
+      "KeyboardKeyCode": 316,
+      "MaxActivationDistance": 320,
+      "ObjectText": 232,
+      "RequiresLineOfSight": 335
+    },
+    "RenderView": {
+      "LightingValid": 368,
+      "SkyboxValid": 653
+    },
+    "Seat": {
+      "Occupant": 544
+    },
+    "Sky": {
+      "MoonAngularSize": 604,
+      "MoonTextureId": 224,
+      "SkyboxBk": 272,
+      "SkyboxDn": 320,
+      "SkyboxFt": 368,
+      "SkyboxLf": 416,
+      "SkyboxOrientation": 592,
+      "SkyboxRt": 464,
+      "SkyboxUp": 512,
+      "StarCount": 608,
+      "SunAngularSize": 612,
+      "SunTextureId": 560
+    },
+    "SpecialMesh": {
+      "MeshId": 264,
+      "Offset": 208,
+      "Scale": 220,
+      "TextureId": 304
+    },
+    "TaskScheduler": {
+      "JobEnd": 208,
+      "JobName": 24,
+      "JobStart": 200,
+      "MaxFps": 176,
+      "Pointer": 132511352
+    },
+    "Team": {
+      "TeamColor": 208
+    },
+    "Terrain": {
+      "GrassLength": 504,
+      "MaterialColors": 680,
+      "WaterColor": 488,
+      "WaterReflectance": 512,
+      "WaterTransparency": 516,
+      "WaterWaveSize": 520,
+      "WaterWaveSpeed": 524
+    },
+    "TextButton": {
+      "AutoButtonColor": 2516,
+      "ContentText": 3560,
+      "Font": 4344,
+      "LineHeight": 3808,
+      "LocalizedText": 3560,
+      "MaxVisibleGraphemes": 4356,
+      "Modal": 2517,
+      "RichText": 4058,
+      "Selected": 2518,
+      "Text": 3560,
+      "TextColor3": 4320,
+      "TextDirection": 3968,
+      "TextScaled": 3537,
+      "TextSize": 4364,
+      "TextStrokeColor3": 4332,
+      "TextStrokeTransparency": 4368,
+      "TextTransparency": 4372,
+      "TextTruncate": 4376,
+      "TextWrapped": 4052,
+      "TextXAlignment": 4380,
+      "TextYAlignment": 3880
+    },
+    "TextLabel": {
+      "ContentText": 2920,
+      "Font": 3704,
+      "LineHeight": 3168,
+      "LocalizedText": 2920,
+      "MaxVisibleGraphemes": 3716,
+      "RichText": 3418,
+      "Text": 2920,
+      "TextColor3": 3680,
+      "TextDirection": 3328,
+      "TextScaled": 2897,
+      "TextSize": 3724,
+      "TextStrokeColor3": 3692,
+      "TextStrokeTransparency": 3728,
+      "TextTransparency": 3732,
+      "TextTruncate": 3736,
+      "TextWrapped": 3412,
+      "TextXAlignment": 3740,
+      "TextYAlignment": 3240
+    },
+    "Tool": {
+      "CanBeDropped": 1224,
+      "Enabled": 1225,
+      "Grip": 1176,
+      "GripForward": 1200,
+      "GripPos": 1212,
+      "GripRight": 1176,
+      "GripUp": 1188,
+      "ManualActivationOnly": 1226,
+      "RequiresHandle": 1227,
+      "Tooltip": 1144
+    },
+    "Value": {
+      "Value": 208
+    },
+    "VehicleSeat": {
+      "MaxSpeed": 568,
+      "Occupant": 536,
+      "SteerFloat": 576,
+      "ThrottleFloat": 584,
+      "Torque": 588,
+      "TurnSpeed": 592
+    },
+    "VisualEngine": {
+      "Dimensions": 2736,
+      "FakeDataModel": 2704,
+      "Pointer": 134140160,
+      "RenderView": 2992,
+      "ViewMatrix": 336
+    },
+    "Workspace": {
+      "CurrentCamera": 1200,
+      "ReadOnlyGravity": 2544,
+      "World": 1032
+    },
+    "World": {
+      "Gravity": 528,
+      "Primitives": 640,
+      "WorldSteps": 1656
     }
-
-    namespace BasePart {
-        inline constexpr uintptr_t CastShadow = 0xF5;
-        inline constexpr uintptr_t Color3 = 0x194;
-        inline constexpr uintptr_t Locked = 0xF6;
-        inline constexpr uintptr_t Massless = 0xF7;
-        inline constexpr uintptr_t Primitive = 0x148;
-        inline constexpr uintptr_t Reflectance = 0xEC;
-        inline constexpr uintptr_t Shape = 0x1B1;
-        inline constexpr uintptr_t Transparency = 0xF0;
-    }
-
-    namespace BloomEffect {
-        inline constexpr uintptr_t Intensity = 0xD0;
-        inline constexpr uintptr_t Size = 0xD4;
-        inline constexpr uintptr_t Threshold = 0xD8;
-    }
-
-    namespace ByteCode {
-        inline constexpr uintptr_t Pointer = 0x10;
-        inline constexpr uintptr_t Size = 0x20;
-    }
-
-    namespace Camera {
-        inline constexpr uintptr_t CFrame = 0xF8;
-        inline constexpr uintptr_t FieldOfView = 0x160;
-        inline constexpr uintptr_t Position = 0x11C;
-        inline constexpr uintptr_t Rotation = 0xF8;
-        inline constexpr uintptr_t ViewportInt16 = 0x2AC;
-        inline constexpr uintptr_t ViewportSize = 0x2E8;
-    }
-
-    namespace CharacterMesh {
-        inline constexpr uintptr_t BaseTextureId = 0xE0;
-        inline constexpr uintptr_t BodyPart = 0x160;
-        inline constexpr uintptr_t MeshId = 0x110;
-        inline constexpr uintptr_t OverlayTextureId = 0x140;
-    }
-
-    namespace DataModel {
-        inline constexpr uintptr_t CreatorId = 0x190;
-        inline constexpr uintptr_t GameId = 0x198;
-        inline constexpr uintptr_t GameLoaded = 0x638;
-        inline constexpr uintptr_t JobId = 0x138;
-        inline constexpr uintptr_t PlaceId = 0x1A0;
-        inline constexpr uintptr_t ServerIP = 0x620;
-        inline constexpr uintptr_t Workspace = 0x178;
-    }
-
-    namespace FakeDataModel {
-        inline constexpr uintptr_t Pointer = 0x78CF1D8;
-        inline constexpr uintptr_t RealDataModel = 0x1D0;
-    }
-
-    namespace GuiBase2D {
-        inline constexpr uintptr_t AbsolutePosition = 0x10C;
-        inline constexpr uintptr_t AbsoluteRotation = 0x188;
-        inline constexpr uintptr_t AbsoluteSize = 0x118;
-    }
-
-    namespace GuiObject {
-        inline constexpr uintptr_t Active = 0x5B8;
-        inline constexpr uintptr_t AnchorPoint = 0x568;
-        inline constexpr uintptr_t AutomaticSize = 0x570;
-        inline constexpr uintptr_t BackgroundColor3 = 0x550;
-        inline constexpr uintptr_t BackgroundTransparency = 0x574;
-        inline constexpr uintptr_t BorderColor3 = 0x55C;
-        inline constexpr uintptr_t BorderMode = 0x578;
-        inline constexpr uintptr_t BorderSizePixel = 0x57C;
-        inline constexpr uintptr_t ClipsDescendants = 0x5B9;
-        inline constexpr uintptr_t GuiState = 0x588;
-        inline constexpr uintptr_t Interactable = 0x5BB;
-        inline constexpr uintptr_t LayoutOrder = 0x590;
-        inline constexpr uintptr_t Position = 0x520;
-        inline constexpr uintptr_t Rotation = 0x188;
-        inline constexpr uintptr_t Selectable = 0x5BC;
-        inline constexpr uintptr_t SelectionOrder = 0x5AC;
-        inline constexpr uintptr_t Size = 0x540;
-        inline constexpr uintptr_t SizeConstraint = 0x5B0;
-        inline constexpr uintptr_t Visible = 0x5BD;
-        inline constexpr uintptr_t ZIndex = 0x5B4;
-    }
-
-    namespace Humanoid {
-        inline constexpr uintptr_t AutoJumpEnabled = 0x1E0;
-        inline constexpr uintptr_t AutoRotate = 0x1E1;
-        inline constexpr uintptr_t AutomaticScalingEnabled = 0x1E2;
-        inline constexpr uintptr_t BreakJointsOnDeath = 0x1E3;
-        inline constexpr uintptr_t CameraOffset = 0x140;
-        inline constexpr uintptr_t DisplayDistanceType = 0x18C;
-        inline constexpr uintptr_t EvaluateStateMachine = 0x1E4;
-        inline constexpr uintptr_t Health = 0x194;
-        inline constexpr uintptr_t HealthDisplayDistance = 0x198;
-        inline constexpr uintptr_t HealthDisplayType = 0x19C;
-        inline constexpr uintptr_t HipHeight = 0x1A0;
-        inline constexpr uintptr_t JumpHeight = 0x1AC;
-        inline constexpr uintptr_t JumpPower = 0x1B0;
-        inline constexpr uintptr_t MaxHealth = 0x1B4;
-        inline constexpr uintptr_t MaxSlopeAngle = 0x1B8;
-        inline constexpr uintptr_t NameDisplayDistance = 0x1BC;
-        inline constexpr uintptr_t NameOcclusion = 0x1C0;
-        inline constexpr uintptr_t RequiresNeck = 0x1E9;
-        inline constexpr uintptr_t RigType = 0x1CC;
-        inline constexpr uintptr_t SeatPart = 0x120;
-        inline constexpr uintptr_t Sit = 0x1EA;
-        inline constexpr uintptr_t TargetPoint = 0x164;
-        inline constexpr uintptr_t UseJumpPower = 0x1EC;
-        inline constexpr uintptr_t WalkSpeed = 0x1DC;
-        inline constexpr uintptr_t WalkSpeedCheck = 0x3C4;
-        inline constexpr uintptr_t WalkToPoint = 0x17C;
-    }
-
-    namespace InputObject {
-        inline constexpr uintptr_t MousePosition = 0xEC;
-    }
-
-    namespace Instance {
-        inline constexpr uintptr_t AttributeContainer = 0x48;
-        inline constexpr uintptr_t AttributeList = 0x18;
-        inline constexpr uintptr_t AttributeToNext = 0x58;
-        inline constexpr uintptr_t AttributeToValue = 0x18;
-        inline constexpr uintptr_t ChildrenEnd = 0x8;
-        inline constexpr uintptr_t ChildrenStart = 0x78;
-        inline constexpr uintptr_t ClassDescriptor = 0x18;
-        inline constexpr uintptr_t ClassName = 0x8;
-        inline constexpr uintptr_t Name = 0xB0;
-        inline constexpr uintptr_t Parent = 0x70;
-    }
-
-    namespace Lighting {
-        inline constexpr uintptr_t Ambient = 0xE0;
-        inline constexpr uintptr_t Atmosphere = 0x1F0;
-        inline constexpr uintptr_t Brightness = 0x128;
-        inline constexpr uintptr_t ClockTime = 0x1C0;
-        inline constexpr uintptr_t ColorShift_Bottom = 0xEC;
-        inline constexpr uintptr_t ColorShift_Top = 0xF8;
-        inline constexpr uintptr_t EnvironmentDiffuseScale = 0x12C;
-        inline constexpr uintptr_t EnvironmentSpecularScale = 0x130;
-        inline constexpr uintptr_t ExposureCompensation = 0x134;
-        inline constexpr uintptr_t FogColor = 0x104;
-        inline constexpr uintptr_t FogEnd = 0x13C;
-        inline constexpr uintptr_t FogStart = 0x140;
-        inline constexpr uintptr_t OutdoorAmbient = 0x110;
-        inline constexpr uintptr_t ShadowSoftness = 0x148;
-        inline constexpr uintptr_t Sky = 0x1E0;
-    }
-
-    namespace LightingParameters {
-        inline constexpr uintptr_t GeographicLatitude = 0x198;
-        inline constexpr uintptr_t LightColor = 0x164;
-        inline constexpr uintptr_t LightDirection = 0x170;
-        inline constexpr uintptr_t SkyAmbient = 0x158;
-        inline constexpr uintptr_t SkyAmbient2 = 0x19C;
-        inline constexpr uintptr_t Source = 0x17C;
-        inline constexpr uintptr_t TrueMoonPosition = 0x18C;
-        inline constexpr uintptr_t TrueSunPosition = 0x180;
-    }
-
-    namespace LocalScript {
-        inline constexpr uintptr_t Bytecode = 0x1A8;
-        inline constexpr uintptr_t Hash = 0xE8;
-    }
-
-    namespace MaterialColors {
-        inline constexpr uintptr_t Asphalt = 0x30;
-        inline constexpr uintptr_t Basalt = 0x27;
-        inline constexpr uintptr_t Brick = 0xF;
-        inline constexpr uintptr_t Cobblestone = 0x33;
-        inline constexpr uintptr_t Concrete = 0xC;
-        inline constexpr uintptr_t CrackedLava = 0x2D;
-        inline constexpr uintptr_t Glacier = 0x1B;
-        inline constexpr uintptr_t Grass = 0x6;
-        inline constexpr uintptr_t Ground = 0x2A;
-        inline constexpr uintptr_t Ice = 0x36;
-        inline constexpr uintptr_t LeafyGrass = 0x39;
-        inline constexpr uintptr_t Limestone = 0x3F;
-        inline constexpr uintptr_t Mud = 0x24;
-        inline constexpr uintptr_t Pavement = 0x42;
-        inline constexpr uintptr_t Rock = 0x18;
-        inline constexpr uintptr_t Salt = 0x3C;
-        inline constexpr uintptr_t Sand = 0x12;
-        inline constexpr uintptr_t Sandstone = 0x21;
-        inline constexpr uintptr_t Slate = 0x9;
-        inline constexpr uintptr_t Snow = 0x1E;
-        inline constexpr uintptr_t WoodPlanks = 0x15;
-    }
-
-    namespace MeshPart {
-        inline constexpr uintptr_t MeshId = 0x300;
-        inline constexpr uintptr_t TextureId = 0x330;
-    }
-
-    namespace ModuleScript {
-        inline constexpr uintptr_t Bytecode = 0x150;
-        inline constexpr uintptr_t Hash = 0xE8;
-    }
-
-    namespace MouseService {
-        inline constexpr uintptr_t InputObject = 0x118;
-    }
-
-    namespace Player {
-        inline constexpr uintptr_t AccountAge = 0x32C;
-        inline constexpr uintptr_t Character = 0x3A8;
-        inline constexpr uintptr_t DisplayName = 0x130;
-        inline constexpr uintptr_t HealthDisplayDistance = 0x358;
-        inline constexpr uintptr_t LocaleId = 0x700;
-        inline constexpr uintptr_t NameDisplayDistance = 0x368;
-        inline constexpr uintptr_t Team = 0x2B0;
-        inline constexpr uintptr_t TeamColor = 0x374;
-        inline constexpr uintptr_t UserId = 0x2D8;
-    }
-
-    namespace Players {
-        inline constexpr uintptr_t LocalPlayer = 0x138;
-    }
-
-    namespace Primitive {
-        inline constexpr uintptr_t AssemblyAngularVelocity = 0x104;
-        inline constexpr uintptr_t AssemblyLinearVelocity = 0xF8;
-        inline constexpr uintptr_t CFrame = 0xC8;
-        inline constexpr uintptr_t Material = 0x236;
-        inline constexpr uintptr_t Orientation = 0xC8;
-        inline constexpr uintptr_t Position = 0xEC;
-        inline constexpr uintptr_t PrimitiveFlags = 0x1B6;
-        inline constexpr uintptr_t Rotation = 0xC8;
-        inline constexpr uintptr_t Size = 0x1B8;
-    }
-
-    namespace PrimitiveFlags {
-        inline constexpr uintptr_t Anchored = 0x2;
-        inline constexpr uintptr_t CanCollide = 0x8;
-        inline constexpr uintptr_t CanQuery = 0x20;
-        inline constexpr uintptr_t CanTouch = 0x10;
-    }
-
-    namespace ProximityPrompt {
-        inline constexpr uintptr_t ActionText = 0xC8;
-        inline constexpr uintptr_t Enabled = 0x14E;
-        inline constexpr uintptr_t HoldDuration = 0x138;
-        inline constexpr uintptr_t KeyboardKeyCode = 0x13C;
-        inline constexpr uintptr_t MaxActivationDistance = 0x140;
-        inline constexpr uintptr_t ObjectText = 0xE8;
-        inline constexpr uintptr_t RequiresLineOfSight = 0x14F;
-    }
-
-    namespace RenderView {
-        inline constexpr uintptr_t LightingValid = 0x170;
-        inline constexpr uintptr_t SkyboxValid = 0x28D;
-    }
-
-    namespace Seat {
-        inline constexpr uintptr_t Occupant = 0x220;
-    }
-
-    namespace Sky {
-        inline constexpr uintptr_t MoonAngularSize = 0x25C;
-        inline constexpr uintptr_t MoonTextureId = 0xE0;
-        inline constexpr uintptr_t SkyboxBk = 0x110;
-        inline constexpr uintptr_t SkyboxDn = 0x140;
-        inline constexpr uintptr_t SkyboxFt = 0x170;
-        inline constexpr uintptr_t SkyboxLf = 0x1A0;
-        inline constexpr uintptr_t SkyboxOrientation = 0x250;
-        inline constexpr uintptr_t SkyboxRt = 0x1D0;
-        inline constexpr uintptr_t SkyboxUp = 0x200;
-        inline constexpr uintptr_t StarCount = 0x260;
-        inline constexpr uintptr_t SunAngularSize = 0x264;
-        inline constexpr uintptr_t SunTextureId = 0x230;
-    }
-
-    namespace SpecialMesh {
-        inline constexpr uintptr_t MeshId = 0x108;
-        inline constexpr uintptr_t Offset = 0xD0;
-        inline constexpr uintptr_t Scale = 0xDC;
-        inline constexpr uintptr_t TextureId = 0x130;
-    }
-
-    namespace TaskScheduler {
-        inline constexpr uintptr_t JobEnd = 0xD0;
-        inline constexpr uintptr_t JobName = 0x18;
-        inline constexpr uintptr_t JobStart = 0xC8;
-        inline constexpr uintptr_t MaxFps = 0xB0;
-        inline constexpr uintptr_t Pointer = 0x7E5F678;
-    }
-
-    namespace Team {
-        inline constexpr uintptr_t TeamColor = 0xD0;
-    }
-
-    namespace Terrain {
-        inline constexpr uintptr_t GrassLength = 0x1F8;
-        inline constexpr uintptr_t MaterialColors = 0x2A8;
-        inline constexpr uintptr_t WaterColor = 0x1E8;
-        inline constexpr uintptr_t WaterReflectance = 0x200;
-        inline constexpr uintptr_t WaterTransparency = 0x204;
-        inline constexpr uintptr_t WaterWaveSize = 0x208;
-        inline constexpr uintptr_t WaterWaveSpeed = 0x20C;
-    }
-
-    namespace TextButton {
-        inline constexpr uintptr_t AutoButtonColor = 0x9D4;
-        inline constexpr uintptr_t ContentText = 0xDE8;
-        inline constexpr uintptr_t Font = 0x10F8;
-        inline constexpr uintptr_t LineHeight = 0xEE0;
-        inline constexpr uintptr_t LocalizedText = 0xDE8;
-        inline constexpr uintptr_t MaxVisibleGraphemes = 0x1104;
-        inline constexpr uintptr_t Modal = 0x9D5;
-        inline constexpr uintptr_t RichText = 0xFDA;
-        inline constexpr uintptr_t Selected = 0x9D6;
-        inline constexpr uintptr_t Text = 0xDE8;
-        inline constexpr uintptr_t TextColor3 = 0x10E0;
-        inline constexpr uintptr_t TextDirection = 0xF80;
-        inline constexpr uintptr_t TextScaled = 0xDD1;
-        inline constexpr uintptr_t TextSize = 0x110C;
-        inline constexpr uintptr_t TextStrokeColor3 = 0x10EC;
-        inline constexpr uintptr_t TextStrokeTransparency = 0x1110;
-        inline constexpr uintptr_t TextTransparency = 0x1114;
-        inline constexpr uintptr_t TextTruncate = 0x1118;
-        inline constexpr uintptr_t TextWrapped = 0xFD4;
-        inline constexpr uintptr_t TextXAlignment = 0x111C;
-        inline constexpr uintptr_t TextYAlignment = 0xF28;
-    }
-
-    namespace TextLabel {
-        inline constexpr uintptr_t ContentText = 0xB68;
-        inline constexpr uintptr_t Font = 0xE78;
-        inline constexpr uintptr_t LineHeight = 0xC60;
-        inline constexpr uintptr_t LocalizedText = 0xB68;
-        inline constexpr uintptr_t MaxVisibleGraphemes = 0xE84;
-        inline constexpr uintptr_t RichText = 0xD5A;
-        inline constexpr uintptr_t Text = 0xB68;
-        inline constexpr uintptr_t TextColor3 = 0xE60;
-        inline constexpr uintptr_t TextDirection = 0xD00;
-        inline constexpr uintptr_t TextScaled = 0xB51;
-        inline constexpr uintptr_t TextSize = 0xE8C;
-        inline constexpr uintptr_t TextStrokeColor3 = 0xE6C;
-        inline constexpr uintptr_t TextStrokeTransparency = 0xE90;
-        inline constexpr uintptr_t TextTransparency = 0xE94;
-        inline constexpr uintptr_t TextTruncate = 0xE98;
-        inline constexpr uintptr_t TextWrapped = 0xD54;
-        inline constexpr uintptr_t TextXAlignment = 0xE9C;
-        inline constexpr uintptr_t TextYAlignment = 0xCA8;
-    }
-
-    namespace Tool {
-        inline constexpr uintptr_t CanBeDropped = 0x4C8;
-        inline constexpr uintptr_t Enabled = 0x4C9;
-        inline constexpr uintptr_t Grip = 0x498;
-        inline constexpr uintptr_t GripForward = 0x4B0;
-        inline constexpr uintptr_t GripPos = 0x4BC;
-        inline constexpr uintptr_t GripRight = 0x498;
-        inline constexpr uintptr_t GripUp = 0x4A4;
-        inline constexpr uintptr_t ManualActivationOnly = 0x4CA;
-        inline constexpr uintptr_t RequiresHandle = 0x4CB;
-        inline constexpr uintptr_t Tooltip = 0x478;
-    }
-
-    namespace Value {
-        inline constexpr uintptr_t Value = 0xD0;
-    }
-
-    namespace VehicleSeat {
-        inline constexpr uintptr_t MaxSpeed = 0x238;
-        inline constexpr uintptr_t Occupant = 0x218;
-        inline constexpr uintptr_t SteerFloat = 0x240;
-        inline constexpr uintptr_t ThrottleFloat = 0x248;
-        inline constexpr uintptr_t Torque = 0x24C;
-        inline constexpr uintptr_t TurnSpeed = 0x250;
-    }
-
-    namespace VisualEngine {
-        inline constexpr uintptr_t Dimensions = 0xAB0;
-        inline constexpr uintptr_t FakeDataModel = 0xA90;
-        inline constexpr uintptr_t Pointer = 0x7FED100;
-        inline constexpr uintptr_t RenderView = 0xBB0;
-        inline constexpr uintptr_t ViewMatrix = 0x150;
-    }
-
-    namespace Workspace {
-        inline constexpr uintptr_t CurrentCamera = 0x4B0;
-        inline constexpr uintptr_t ReadOnlyGravity = 0x9F0;
-        inline constexpr uintptr_t World = 0x408;
-    }
-
-    namespace World {
-        inline constexpr uintptr_t Gravity = 0x210;
-        inline constexpr uintptr_t Primitives = 0x280;
-        inline constexpr uintptr_t WorldSteps = 0x678;
-    }
-
-} // namespace offsets
+  }
+}
